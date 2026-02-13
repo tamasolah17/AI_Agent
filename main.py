@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify, render_template
 from agent import handle_message
 
-app = Flask(__name__)
+app2 = Flask(__name__)
 
-@app.route("/chat", methods=["POST"])
+@app2.route("/chat", methods=["POST"])
 def chat():
     data = request.json
     result = handle_message(
@@ -12,9 +12,9 @@ def chat():
     )
     return jsonify(result)
 
-@app.route("/")
+@app2.route("/")
 def index():
     return render_template("widget.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app2.run(debug=True)
