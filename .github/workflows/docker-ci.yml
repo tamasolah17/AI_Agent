@@ -38,7 +38,7 @@ jobs:
             docker run -d \
               --name agent \
               --restart unless-stopped \
-              -p 5000:5000\
+              -p 5000:5000 \
               --env-file ~/.env \
               -e OPENAI_API_KEY=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/
               ${{ secrets.DOCKER_USERNAME }}/agent:latest
