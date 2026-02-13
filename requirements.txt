@@ -2,3 +2,4 @@ Flask
 agent
 memory
 openai
+gunicorn
