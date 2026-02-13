@@ -19,8 +19,8 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/webhook-server:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/webhook-server:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/agent:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/agent:latest
 
        # THIS IS THE MISSING PART
       - name: Deploy to Ubuntu server
