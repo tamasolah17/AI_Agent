@@ -12,14 +12,18 @@ def handle_message(user_id, message):
 
     if intent == "pricing_objection":
         return {
-            "reply": "Our plans start at $49/month.",
+            "reply": "🤖Our plans start at $49/month.",
             "suggestions": [
                 "Book a demo",
                 "What features are included?",
                 "Talk to a human"
             ]
         }
+    elif intent == "welcome_message":
 
+        reply = (
+            "Hi 👋 I can help you with pricing, features or ordering."
+        )
     elif intent == "trust_objection":
         reply = (
             "Totally fair question. We offer a 1-year warranty and a hassle-free refund. "

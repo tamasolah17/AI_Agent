@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AI Assistant</title>
+    <title>🤖AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='widget.css') }}">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -90,15 +91,9 @@
 </head>
 <body>
 
-<div class="chat-container">
-    <div class="messages" id="messages"></div>
 
-    <div class="input-area">
-        <input id="message" placeholder="Type a message..." />
-        <button onclick="sendMessage()">Send</button>
-    </div>
-</div>
-
+<!-- ✅ Load JS properly -->
+<script src="{{ url_for('static', filename='widget.js') }}"></script>
 <script>
     let typingBubble = null;
 
