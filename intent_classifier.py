@@ -25,6 +25,7 @@ ALLOWED_INTENTS = {
     "Compression_declaration" 
     "welcome_message"
     "checkout_intent"
+    "product_features"
     "human"
     "unknown"
     
@@ -38,6 +39,7 @@ Guidelines:
 - Questions about whether the product is right for them → product_fit_question
 - Answers   after only "product_fit_question" focused on skin issues,acnes → "Mask_declaration" . ONLY AFTER product_fit_question!!
 - If the chatbox is blank, contains 0 answers and 0 questions → trigger welcome_message
+- Questions about features, additions, and product → pricing_objection
    
     
    

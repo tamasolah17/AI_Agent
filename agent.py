@@ -24,6 +24,11 @@ def handle_message(user_id, message):
         reply = (
             "Hi 👋 I can help you with pricing, features or ordering."
         )
+    elif intent == "product_features":
+
+        reply = (
+            "The plan includes a 24/7 AI chatbot, customizable responses, suggestion buttons, website installation, mobile support, and basic analytics."
+        )
     elif intent == "trust_objection":
         reply = (
             "Totally fair question. We offer a 1-year warranty and a hassle-free refund. "
