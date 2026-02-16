@@ -32,6 +32,7 @@ ALLOWED_INTENTS = {
 }
 
 Guidelines:
+- Questions about features, what's include?, and product → product_features
 - Questions about price, discounts, value → pricing_objection
 - Questions about legitimacy, reviews, trust → trust_objection
 - Questions about delivery time or shipping → shipping_objection
@@ -39,7 +40,7 @@ Guidelines:
 - Questions about whether the product is right for them → product_fit_question
 - Answers   after only "product_fit_question" focused on skin issues,acnes → "Mask_declaration" . ONLY AFTER product_fit_question!!
 - If the chatbox is blank, contains 0 answers and 0 questions → trigger welcome_message
-- Questions about features, additions, and product → product_features
+
    
     
    
